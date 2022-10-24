@@ -36,14 +36,62 @@ fn quina() {
     print!("\n");
 }
 
-fn sena() {}
+fn sena() {
+    let nums_to_generate = ;
+    let mut n = 0;
+
+    std::process::Command::new("clear").status().unwrap();
+
+    print!("\n");
+
+    while n < nums_to_generate {
+        let num_sorted = rand::thread_rng().gen_range(1..61);
+
+        print!("{}; ", num_sorted);
+
+        n = n + 1;
+    }
+
+    print!("\n");
+
+}
 
 fn mania() {
-    println!("Mania");
+    let nums_to_generate = 6;
+    let mut n = 0;
+
+    std::process::Command::new("clear").status().unwrap();
+
+    print!("\n");
+
+    while n < nums_to_generate {
+        let num_sorted = rand::thread_rng().gen_range(1..61);
+
+        print!("{}; ", num_sorted);
+
+        n = n + 1;
+    }
+
+    print!("\n");
 }
 
 fn facil() {
-    println!("Fácil");
+    let nums_to_generate = 15;
+    let mut n = 0;
+
+    std::process::Command::new("clear").status().unwrap();
+
+    print!("\n");
+
+    while n < nums_to_generate {
+        let num_sorted = rand::thread_rng().gen_range(1..26);
+
+        print!("{}; ", num_sorted);
+
+        n = n + 1;
+    }
+
+    print!("\n");
 }
 
 fn main() {
