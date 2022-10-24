@@ -1,4 +1,5 @@
 fn show_menu() {
+    print!("\n");
     println!("======= lotoSort ========");
     println!("_________________________");
     println!("| - Jogos disponíveis - |");
@@ -15,4 +16,6 @@ fn show_menu() {
 
 fn main() {
     show_menu();
+
+    let mut opcao = 
 }
