@@ -1,3 +1,6 @@
+use rand::Rng;
+use std::io;
+
 fn show_menu() {
     print!("\n");
     println!("======= lotoSort ========");
@@ -11,11 +14,22 @@ fn show_menu() {
     println!("|- - - - - - - - - - - -|");
     println!("| 5 - Sair              |");
     println!("|-----------------------|");
-    println!("Digite o número do tipo de sorteio: \n> ");
+    println!("Digite o número do tipo de sorteio: ");
 }
 
 fn main() {
     show_menu();
 
-    let mut opcao = 
+    let mut opcao = String::new();
+
+    io::stdin()
+        .read_line(&mut opcao)
+        .expect("Falha ao ler entrada");
+
+    let opcao: u32 = opcao
+        .trim()
+        .parse()
+        .expect("Por favor, digite apenas números");
+
+    println!("Opção escolhida: {}", opcao);
 }
