@@ -18,12 +18,25 @@ fn show_menu() {
 }
 
 fn quina() {
-    println!("Jogo quina");
+    let nums_to_generate = 5;
+    let mut n = 0;
+
+    std::process::Command::new("clear").status().unwrap();
+
+    print!("\n");
+
+    while n < nums_to_generate {
+        let num_sorted = rand::thread_rng().gen_range(1..81);
+
+        print!("{}; ", num_sorted);
+
+        n = n + 1;
+    }
+
+    print!("\n");
 }
 
-fn sena() {
-    println!("Sena");
-}
+fn sena() {}
 
 fn mania() {
     println!("Mania");
